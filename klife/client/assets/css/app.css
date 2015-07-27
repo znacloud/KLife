@@ -1,10 +1,12 @@
 /* Write your styles */
  .get {
-      background: #1E5B94;
+      background: #41C257;
       color: #fff;
       text-align: center;
       padding: 100px 0;
-    }
+    
+      height: 100%;
+}
 
     .get-title {
       font-size: 200%;
@@ -73,9 +75,9 @@
     }
 
     .footer p {
-      color: #7f8c8d;
+      color: #CDDDD1;
       margin: 0;
       padding: 15px 0;
       text-align: center;
-      background: #2d3e50;
+      background: #34521D;
     }
