@@ -1,9 +1,12 @@
 /* Write your styles */
+ body {
+   height: 95vh;
+ }
  .get {
-      background: #41C257;
+      background: #c2f876;
       color: #fff;
       text-align: center;
-      padding: 100px 0;
+      padding: 40vh 0;
     
       height: 100%;
 }
