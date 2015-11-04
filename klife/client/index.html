@@ -15,7 +15,7 @@
   <!-- No Baidu Siteapp-->
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
 
-  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+  <link rel="icon" type="image/png" href="assets/i/favicon@32.png">
 
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -31,53 +31,29 @@
   <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
   <meta name="msapplication-TileColor" content="#0e90d2">
 
-  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/app.css">
 </head>
-<body>
-<header class="am-topbar am-topbar-fixed-top">
-  <div class="am-container">
-    <h1 class="am-topbar-brand">
-      <a href="#"><img src="assets/i/klife_logo@58.png" width="58px" height="58px"/></a>
-    </h1>
-
-    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only"
-            data-am-collapse="{target: '#collapse-head'}"><span class="am-sr-only">导航切换</span> <span
-        class="am-icon-bars"></span></button>
-
-    <div class="am-collapse am-topbar-collapse" id="collapse-head">
-      <ul class="am-nav am-nav-pills am-topbar-nav" style="display:none">
-        <li class="am-active"><a href="#">首页</a></li>
-        <li><a href="#">项目</a></li>
-        <li class="am-dropdown" data-am-dropdown>
-          <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-            下拉菜单 <span class="am-icon-caret-down"></span>
-          </a>
-          <ul class="am-dropdown-content">
-            <li class="am-dropdown-header">标题</li>
-            <li><a href="#">1. 默认样式</a></li>
-            <li><a href="#">2. 基础设置</a></li>
-            <li><a href="#">3. 文字排版</a></li>
-            <li><a href="#">4. 网格系统</a></li>
-          </ul>
-        </li>
-      </ul>
-
-      <div class="am-topbar-right" style="display:none">
-        <button class="am-btn am-btn-secondary am-topbar-btn am-btn-sm"><span class="am-icon-pencil"></span> 注册</button>
-      </div>
-
-      <div class="am-topbar-right" style="display:none">
-        <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm"><span class="am-icon-user"></span> 登录</button>
-      </div>
+<body style="background-color:#06c000">
+<header>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html" style="padding:0px 15px">
+          <img src="assets/i/klife_logo@50.png"/>
+      </a>
     </div>
-  </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#">首页</a></li> 
+      <li><a href="#">APP</a></li> 
+      <li><a href="#">关于</a></li> 
+      </ul>
+  </nav>
 </header>
 
-<div class="get">
-  <div class="am-g">
-    <div class="am-u-lg-12">
-      <h1 class="get-title">考拉生活 - 记录家庭的点滴生活</h1>
+<div class="container" style="height:100%">
+  <div class="row">
+    <div style="left:auto;right:auto">
+      <h1 class="get-title">考拉KAOLA生活 - 记录家庭的点滴生活</h1>
     </div>
   </div>
 </div>
@@ -157,14 +133,7 @@
   <p>KLife by Stephan | Supported by Strongloop</p>
 </footer>
 
-<!--[if (gte IE 9)|!(IE)]><!-->
 <script src="assets/js/jquery.min.js"></script>
-<!--<![endif]-->
-<!--[if lte IE 8 ]>
-<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
-<![endif]-->
-<script src="assets/js/amazeui.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
 </body>
 </html>
