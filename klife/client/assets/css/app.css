@@ -1,82 +1,162 @@
+@font-face
+{
+    font-family: myFirstFont;
+    src: url(assets/fonts/fontawesome-webfont.ttf);
+}
+
 /* Write your styles */
  body {
    height: 95vh;
  }
- .get {
-      background: #06c000;
-      color: #fff;
-      text-align: center;
-      padding: 40vh 0;
-    
-      height: 100%;
+
+.nav-content {
+    width: 960px;
+    margin: auto;
 }
 
-    .get-title {
-      font-size: 200%;
-      border: 2px solid #fff;
-      padding: 20px;
-      display: inline-block;
-      text-align: center;
-    }
+.section-content {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 
-    .get-btn {
-      background: #fff;
-    }
+}
 
-    .detail {
-      background: #fff;
-    }
+/* Override Bootstrap */
 
-    .detail-h2 {
-      text-align: center;
-      font-size: 150%;
-      margin: 40px 0;
-    }
+.navbar-default {
+    height: 70px;
+    padding-top: 10px;
+    border-style: none;
+    
+}
 
-    .detail-h3 {
-      color: #1f8dd6;
-    }
+.navbar-default .navbar-nav > li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
-    .detail-p {
-      color: #7f8c8d;
-    }
+.navbar-default .navbar-right > li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
-    .detail-mb {
-      margin-bottom: 30px;
-    }
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:focus {
+    padding-bottom: 5px;
+  font-size: 16px;
+  color: #3EB900;
+    font-weight: bold;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    color: #3E9400;
+  border-bottom:medium solid #3EB900;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #3EB900;
+  border-bottom:medium solid #3EB900;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+    border-style:none;
+    cursor: default;
+}
 
-    .hope {
-      background: #0bb59b;
-      padding: 50px 0;
-    }
+.navbar-default .navbar-right > .login > a,
+.navbar-default .navbar-right > .login > a:focus{
+    background-color: #3EB900;
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 12px;
+    border-style: none;
+    
+}
 
-    .hope-img {
-      text-align: center;
-    }
+.navbar-default .navbar-right > .login > a:hover{
+    background-color: #3E9400;
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 12px;
+    border-style: none;
+}
 
-    .hope-hr {
-      border-color: #149C88;
-    }
+.navbar-default .navbar-right > .register > a,
+.navbar-default .navbar-right > .register > a:focus{
+    background-color: #3587C0;
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 12px;
+    border-style: none;
+    
+}
 
-    .hope-title {
-      font-size: 140%;
-    }
+.navbar-default .navbar-right > .register > a:hover{
+    background-color: #1370b1;
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 12px;
+    border-style: none;
+}
 
-    .about {
-      background: #fff;
-      padding: 40px 0;
-      color: #7f8c8d;
-    }
 
-    .about-color {
-      color: #34495e;
-    }
+.carousel-inner img {
+    width:100%;
+    height:1px;
+    margin-top: -20px;
+    
+}
 
-    .about-title {
-      font-size: 180%;
-      padding: 30px 0 50px 0;
-      text-align: center;
-    }
+#myCarousel {
+    min-width: 960px;
+    margin: auto;
+}
+
+#myModules {
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    background-color: #e8e8e8;
+}
+
+.circle-item {
+    width: 160px;
+    height: 160px;
+    text-align: center;
+    color:white;
+    font-size: 36px;
+    font-weight: bold;
+    border-radius: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: myFirstFont;
+    padding-top: 52px;
+}
+
 
     .footer p {
       color: #CDDDD1;
@@ -85,6 +165,3 @@
       text-align: center;
       background: #34521D;
     }
-.am-topbar-brand {
-    height: 60px;
-}
