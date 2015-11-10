@@ -1,4 +1,4 @@
- jQuery.extend({
+jQuery.extend({
     linkAllCircle: function(callback) {
         'use strict';
         $(".k-circle").animate({left:"+=213px"},"fast");
@@ -12,7 +12,7 @@
         $(".e-circle").animate({
             left: '-80px',
             opacity: '1'
-        }, 2500, callback);
+        }, 2000, callback);
     }
 ,
     showFCircle: function(callback) {
@@ -20,7 +20,7 @@
         $(".f-circle").animate({
             left: '-40px',
             opacity: '1'
-        }, 2500,callback);
+        }, 2000,callback);
     }
 ,
     showICircle: function(callback) {
@@ -28,7 +28,7 @@
         $(".i-circle").animate({
             left: '0px',
             opacity: '1'
-        }, 2500, callback);
+        }, 2000, callback);
 }
 ,
     showLCircle: function(callback) {
@@ -36,7 +36,7 @@
         $(".l-circle").animate({
             left: '40px',
             opacity: '1'
-        }, 2500, callback);
+        }, 2000, callback);
 }
 ,
     showKCircle: function(callback) {
@@ -45,7 +45,7 @@
         $(".k-circle").animate({
             left: '80px',
             opacity: '1'
-        }, 2500, callback);
+        }, 2000, callback);
     }
 ,
      hiddenAllCircles: function(callback) {
