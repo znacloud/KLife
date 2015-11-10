@@ -161,10 +161,10 @@
 {
 0% {
     opacity: 0;
-    top: -20px;
+    left: 0px;
     }
 100% {opacity: 1;
-      top: 0px
+      left: 0px
     }
 }
 
@@ -172,7 +172,7 @@
 {
 0% {
     opacity: 0;
-    top: -20px;}
+    left: 0px;}
 100% {
     opacity: 1;
     top: 0px;
@@ -188,34 +188,46 @@
 .logo-box > img {
     position: relative;
     opacity: 0;
-    top: -20px;
-/*    animation: fadeIn 2s ease;*/
-/*    -webkit-animation: fadeIn 2s ease;  Safari and Chrome */
     width: 142px;
     height: 142px;
+    transition: transform 2s ease-out 1s;
+    -webkit-transition: -webkit-transform 2s ease-out 1s;
 }
 
+
 img.k-circle {
-    background: url(/assets/i/klife_seperate@142.png) 2px 2px;
+    left: -60px;
+    background: url(../i/klife_seperate@142.png) 2px 2px;
 }
 
 img.l-circle {
-    background: url(/assets/i/klife_seperate@142.png) 2px 286px;
+    left: -30px;
+    background: url(../i/klife_seperate@142.png) 2px 286px;
 }
 
 img.i-circle {
-    background: url(/assets/i/klife_seperate@142.png) 2px 144px;
+    left: 0px;
+    background: url(../i/klife_seperate@142.png) 2px 144px;
 }
 
 img.f-circle {
-    background: url(/assets/i/klife_seperate@142.png) 144px 2px;
+    left: 30px;
+    background: url(../i/klife_seperate@142.png) 144px 2px;
 }
 img.e-circle {
-    background: url(/assets/i/klife_seperate@142.png) 144px 286px;
+    left: 60px;
+    background: url(../i/klife_seperate@142.png) 144px 286px;
 }
 
 img.mix-circle {
-    background: url(/assets/i/klife_seperate@142.png) 144px 144px;
+    left: 290px;
+    top:-142px;
+    background: url(../i/klife_seperate@142.png) 144px 144px;
+}
+
+img.scaleHidden {
+    transform: scale(0,0);
+    -webkit-transform: scale(0,0);
 }
 
 

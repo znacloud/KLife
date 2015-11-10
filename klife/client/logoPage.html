@@ -42,20 +42,38 @@
         <img class="i-circle"  src="assets/i/transparent.png"/>
         <img class="f-circle"  src="assets/i/transparent.png"/>
         <img class="e-circle"  src="assets/i/transparent.png"/>
-        <img class="mix-circle" style="display:none;" src="assets/i/transparent.png"/>
+            <img class="mix-circle" src="assets/i/transparent.png"/>
     </div>
+
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/app.js"></script>
     <script>
 $(document).ready(function(){
-//    $(".k-circle").fadeIn(2000);
-//    $(".l-circle").fadeIn(3000);
-//    $(".i-circle").fadeIn(4000);
-//    $(".f-circle").fadeIn(5000);
-//    $(".e-circle").fadeIn(6000);
-    $.showKCircle();
+//    $(".k-circle").css({"opacity":1,"left":"0px"});
+//    $(".l-circle").css({"opacity":1,"left":"0px"});
+//    $(".i-circle").css({"opacity":1,"left":"0px"});
+//    $(".f-circle").css({"opacity":1,"left":"0px"});
+//    $(".e-circle").css({"opacity":1,"left":"0px"});
+//    $.showKCircle($.showLCircle($.showICircle($.showFCircle($.showECircle($.linkAllCircle())))));
+    
+      $.showKCircle();
+      $.showLCircle();
+      $.showICircle();
+      $.showECircle();
+      $.showFCircle(function(){
+         $(".logo-box").animate({opacity:'1'},3000,function(){
+             $.linkAllCircle(function(){
+                 $.hiddenAllCircles(function(){
+//                     $(".mix-circle").animate({webkitTransform: scale(2,4)},3000);     
+//                     $(".mix-circle").css({"-webkit-transform":"scale(0,0)"});
+                     $(".mix-circle").addClass("scaleHidden");
+                 });  
+             });
+         });
+      });
+
    
 });
 </script>
