@@ -1,6 +1,6 @@
 # KLife
 
-![animation](http://b.hiphotos.baidu.com/image/pic/item/21a4462309f79052a9d374da0af3d7ca7acbd501.jpg)
+![animation](http://b.hiphotos.baidu.com/image/pic/item/b999a9014c086e060c0f02af04087bf40bd1cbaa.jpg)
 
 An online world for personal work and life......
 # 基于Strongloop的一个实践项目
