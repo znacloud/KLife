@@ -33,8 +33,9 @@
 
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/app.css">
+  <link href='http://www.youziku.com/webfont/CSS/fffc5d5179e498c5ce9431aa87a2d9ff' rel='stylesheet' type='text/css'/>
 </head>
-<body style="height:100%;">
+<body style="height:100%;width:100%">
     
     <div class="logo-box">
         <img class="k-circle"  src="assets/i/transparent.png"/>
@@ -44,6 +45,7 @@
         <img class="e-circle"  src="assets/i/transparent.png"/>
             <img class="mix-circle" src="assets/i/transparent.png"/>
     </div>
+    <div class="logo-text">记录点滴生活</div>
 
 
 <script src="assets/js/jquery.min.js"></script>
@@ -57,12 +59,15 @@ $(document).ready(function(){
       $.showICircle();
       $.showECircle();
       $.showFCircle(function(){
-         $(".logo-box").animate({opacity:'1'},3000,function(){
+         $(".logo-text").animate({opacity:'1'},3000,function(){
              $.linkAllCircle(function(){
                  $.hiddenAllCircles(function(){
-                     $(".mix-circle").addClass("scaleHidden");
-                     $(".logo-box").animate({opacity:'1'},3000,function(){
-                         location.replace("index.html");
+                       $(".logo-text").css({animation:"changeColor 5s",
+                                            webkitAnimation:"changeColor 5s",width:"230px"});
+//                     $(".mix-circle").addClass("scaleHidden");
+                     $(".logo-box").animate({opacity:'1'},5000,function(){
+//                         location.replace("index.html");
+                           $(".logo-text").addClass("logo-text-gradient");
                      });
                  });  
              });

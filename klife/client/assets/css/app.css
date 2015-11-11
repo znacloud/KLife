@@ -24,25 +24,42 @@
 
 .dynamic-photo-box {
     width: 300px;
-    height: 300px;
+    height: 400px;
+    margin:auto;
 }
 
 .dynamic-photo-box > img {
     border-radius: 3px;
 }
 
-@media (max-width: 540px) {
+.photo-text {
+    font-family:cjsyingbixingshu532742;
+    font-size: 34px;
+    height: 100px;
+    width: auto;
+    padding: 30px 5px;
+    font-weight: lighter;
+    color:#c0c0c0;
+    vertical-align: middle;
+    margin: auto;
+}
+
+@media (max-width: 700px) {
     .dynamic-photo-box {
         display: none;
+    }
+    
+    .col-1 {
+        width: 100%;
     }
 }
 
 
 .login-box {
     width: auto;
-    min-width: 300px;
     max-width: 360px;
     height: 400px;
+    margin:auto;
     box-shadow: 1px 1px 8px 2px #CDDDD1;
     border-radius: 0px;
     
@@ -231,32 +248,29 @@
     padding-top: 52px;
 }
 
-@keyframes fadeIn
+@keyframes changeColor
 {
-0% {
-    opacity: 0;
-    left: 0px;
-    }
-100% {opacity: 1;
-      left: 0px
-    }
+    0%   {color:#f11700;}
+    25%  {color:#f1ca00;}
+    50%  {color:#1e8ec6;}
+    75%  {color:#c51fb3;}
+    100% {color:#06c000;}
 }
 
-@-webkit-keyframes fadeIn /* Safari and Chrome */
+@-webkit-keyframes changeColor /* Safari and Chrome */
 {
-0% {
-    opacity: 0;
-    left: 0px;}
-100% {
-    opacity: 1;
-    top: 0px;
-    }
+    0%   {color:#f11700;}
+    25%  {color:#f1ca00;}
+    50%  {color:#1e8ec6;}
+    75%  {color:#c51fb3;}
+    100% {color:#06c000;}
 }
 
 .logo-box {
+    position: relative;
     width:730px;
     height:144px;
-    margin:20% auto 20% auto;
+    margin:20% auto auto auto;
 }
 
 .logo-box > img {
@@ -266,6 +280,34 @@
     height: 142px;
     transition: transform 2s ease-out 1s;
     -webkit-transition: -webkit-transform 2s ease-out 1s;
+}
+
+.logo-text {
+    position: relative;
+    text-align: center;
+    width: 450px;
+    margin: auto;
+    height:auto;
+    opacity: 0;
+    transition: color 3s;
+    font-family:hzguangbiao532268;
+    font-size: 72px;
+    color: #06c000;
+}
+
+.logo-text-gradient {
+    background-image: -webkit-linear-gradient(left,#06c000,#f11700,
+                                                #f1ca00,#1e8ec6,#c51fb3 ); /* Safari 5.1 - 6.0 */
+    background-image: -o-linear-gradient(left,#06c000,#f11700,
+                                                #f1ca00,#1e8ec6,#c51fb3 ); /* Opera 11.1 - 12.0 */
+    background-image: -moz-linear-gradient(left,#06c000,#f11700,
+                                                #f1ca00,#1e8ec6,#c51fb3 ); /* Firefox 3.6 - 15 */
+    background-image: linear-gradient(left,#06c000,#f11700,#f1ca00,
+                                                #1e8ec6,#c51fb3 ); /* 标准的语法（必须放在最后） */
+     -webkit-background-clip: text;
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+     text-fill-color: transparent;
 }
 
 

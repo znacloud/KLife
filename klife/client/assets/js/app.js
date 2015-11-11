@@ -4,6 +4,7 @@ jQuery.extend({
         $(".k-circle").animate({left:"+=213px"},"fast");
         $(".l-circle").animate({left:"+=107px"},"fast");
         $(".f-circle").animate({left:"-=107px"},"fast");
+        $(".logo-text").animate({fontSize:"36px"},"fast");
         $(".e-circle").animate({left:"-=213px"},"fast",callback);
      }
 ,
