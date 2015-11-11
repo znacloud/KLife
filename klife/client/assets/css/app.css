@@ -9,7 +9,7 @@
    height: 95vh;
  }
 
-.nav-content {
+.section-content-960 {
     width: 960px;
     margin: auto;
 }
@@ -23,25 +23,78 @@
 }
 
 .dynamic-photo-box {
-    float: left;
     width: 300px;
     height: 300px;
-    margin:150px auto auto 150px;
 }
 
 .dynamic-photo-box > img {
     border-radius: 3px;
 }
 
+@media (max-width: 540px) {
+    .dynamic-photo-box {
+        display: none;
+    }
+}
+
 
 .login-box {
-    width: 300px;
+    width: auto;
+    min-width: 300px;
+    max-width: 360px;
     height: 400px;
-    margin: 100px 150px auto auto;
     box-shadow: 1px 1px 8px 2px #CDDDD1;
-    border-radius: 4px;
+    border-radius: 0px;
     
 }
+
+.login-box .box-label {
+    position: relative;
+    color:darkgreen;
+    font-size: 20px;
+    padding:24px 0px 0px 36px;
+}
+
+.form-login {
+    position: relative;
+    margin: 16px 36px 16px 36px;
+}
+
+.form-login > button,
+.form-login > button:focus {
+    position: relative;
+    width: 100%;
+    height: 42px;
+    font-size: 16px;
+    margin-top:20px;
+    border-radius: 0px;
+    background-color: #06c000;
+    color: white;
+    border-style: none;
+}
+
+.form-login > button:hover {
+     background-color: #05ad00;
+     color:white;
+}
+
+
+.form-login > .form-control {
+    position: relative;
+    border-color: #CDDDD1;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    height: 42px;
+    border-radius: 0px;
+    margin-top: 20px;
+}
+
+.form-login > .form-control:focus {
+    border-color: rgb(85, 157, 31);
+}
+
+.form-login > .
+
 
 /* Override Bootstrap */
 

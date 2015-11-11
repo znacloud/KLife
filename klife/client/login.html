@@ -47,11 +47,31 @@
   </nav>
 </header>
     
-<section class="container" style="height:720px;">
-    <div class="dynamic-photo-box">
-        <img src="assets/upload/photos/login1.png" width="100%" height="100%"/>
+<section  style="height:720px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-push-2">
+                <!-- picture box -->
+                <div class="dynamic-photo-box">
+                    <img src="assets/upload/photos/login1.png" width="100%" height="100%"/>
+                </div>
+            </div>
+    
+            <div class="col-xs-6" >
+                <!-- login box -->
+                <div class="login-box">
+                    <label class="box-label">账号登录</label>
+                    <form class="form-login">
+
+                     <input type="text" class="form-control" id="firstname" 
+                        placeholder="输入账号/邮箱/手机号">
+                     <input type="text" class="form-control" id="lastname" 
+                        placeholder="输入密码">
+                     <button type="submit">登录</button>
+                     </form>
+               </div>
+        </div>
     </div>
-    <div class="login-box">
     </div>
 </section>
 
